@@ -96,7 +96,8 @@
               </div>
               <div flex class="img">
                 <template if="{{model.smiles && model.smiles !== 'NA'}}">
-                  <img src="{{model.smiles | sourireURL}}?render-image-height=104" alt="model.smiles">
+                  <!--<img src="{{model.smiles | sourireURL}}?render-image-height=104" alt="model.smiles">-->
+                  <img src="http://placekitten.com/160/104" alt="kitten">
                 </template>
               </div>
             </div>
@@ -109,7 +110,8 @@
       <div>
         <div class="image">
           <template if="{{dataDetail.smiles}}">
-            <div style="background-image: url('{{dataDetail.smiles | sourireURL}}?render-image-size=600,300');"></div>
+            <!--<div style="background-image: url('{{dataDetail.smiles | sourireURL}}?render-image-size=600,300');"></div>-->
+            <div style="background-image: url(http://placekitten.com/600/300);"></div>
           </template>
           <template if="{{!dataDetail.smiles}}">
             <div>NO IMAGE</div>
